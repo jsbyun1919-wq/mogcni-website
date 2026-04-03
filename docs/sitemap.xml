@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://mog-insight.netlify.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mog-insight.netlify.app/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mog-insight.netlify.app/diagnostic.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/sales-dependency-structure.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/amoeba-prerequisites.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/kpi-not-working.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/consulting-in-ai-era.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/japanese-subsidiary-challenges.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/startup-late-system.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/sales-productivity-plateau.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/strategy-execution-gap.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/amoeba-philosophy-not-accounting.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mog-insight.netlify.app/blog/consulting-report-in-drawer.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>

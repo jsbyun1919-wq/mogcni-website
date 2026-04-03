@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="cYihabfvZMjcaCsN262vaF2Cwg_7W7BLcQ8xPw8VjxY" />
+<title>회사소개 | MOG Consulting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a class='nav-logo' href='/'><span class="nav-logo-text">MOG Consulting</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href='/#services'>서비스</a></li>
+      <li><a href='/#diagnostic'>진단도구</a></li>
+      <li><a href='/#education'>교육</a></li>
+      <li><a href='/#insights'>인사이트</a></li>
+      <li><a href="blog/">블로그</a></li>
+      <li><a href='/about' style='color:var(--wine);font-weight:600;'>회사소개</a></li>
+      <li><a class='nav-cta' href='/#contact'>상담 신청</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO — 등대 메타포 -->
+<section class="hero" style="padding:140px 0 80px;text-align:center;position:relative;overflow:hidden;">
+  <div class="container" style="position:relative;z-index:2;">
+    <!-- 등대 SVG 일러스트 -->
+    <svg width="140" height="200" viewBox="0 0 140 200" style="margin-bottom:20px;filter:drop-shadow(0 4px 24px rgba(232,180,196,.3));">
+      <defs>
+        <radialGradient id="beamGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#fff" stop-opacity=".6"/>
+          <stop offset="100%" stop-color="#F5DDE6" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <!-- 회전하는 빛줄기 -->
+      <g style="transform-origin:70px 38px;">
+        <animateTransform attributeName="transform" type="rotate" from="0 70 38" to="360 70 38" dur="6s" repeatCount="indefinite"/>
+        <path d="M70 38 L15 0 L40 28Z" fill="#E8B4C4" opacity=".3"/>
+        <path d="M70 38 L125 0 L100 28Z" fill="#E8B4C4" opacity=".3"/>
+        <path d="M70 38 L0 50 L35 38Z" fill="#F5DDE6" opacity=".2"/>
+        <path d="M70 38 L140 50 L105 38Z" fill="#F5DDE6" opacity=".2"/>
+      </g>
+      <!-- 빛 글로우 -->
+      <circle cx="70" cy="38" r="20" fill="url(#beamGlow)">
+        <animate attributeName="r" values="18;24;18" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".6;.9;.6" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- 등대 몸체 -->
+      <rect x="52" y="50" width="36" height="8" rx="2" fill="#fff" opacity=".9"/>
+      <polygon points="55,58 85,58 82,140 58,140" fill="#fff"/>
+      <rect x="58" y="70" width="24" height="5" rx="1" fill="#C97690" opacity=".5"/>
+      <rect x="58" y="88" width="24" height="5" rx="1" fill="#C97690" opacity=".5"/>
+      <rect x="58" y="106" width="24" height="5" rx="1" fill="#C97690" opacity=".5"/>
+      <rect x="58" y="124" width="24" height="5" rx="1" fill="#C97690" opacity=".5"/>
+      <!-- 등대 상단 (빛) -->
+      <rect x="58" y="38" width="24" height="14" rx="3" fill="#F5DDE6"/>
+      <circle cx="70" cy="45" r="5" fill="#fff">
+        <animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <!-- 등대 꼭대기 -->
+      <polygon points="65,38 75,38 70,28" fill="#E8B4C4"/>
+      <!-- 기초 -->
+      <rect x="50" y="140" width="40" height="8" rx="2" fill="rgba(255,255,255,.7)"/>
+      <!-- 바위/땅 -->
+      <ellipse cx="70" cy="160" rx="52" ry="10" fill="rgba(255,255,255,.12)"/>
+      <!-- 파도 -->
+      <path d="M10 172 Q28 164 46 172 Q64 180 82 172 Q100 164 118 172 Q128 178 134 174" stroke="rgba(255,255,255,.2)" stroke-width="2" fill="none">
+        <animate attributeName="d" values="M10 172 Q28 164 46 172 Q64 180 82 172 Q100 164 118 172 Q128 178 134 174;M10 174 Q28 182 46 174 Q64 166 82 174 Q100 182 118 174 Q128 168 134 172;M10 172 Q28 164 46 172 Q64 180 82 172 Q100 164 118 172 Q128 178 134 174" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M5 180 Q22 172 40 180 Q58 188 76 180 Q94 172 112 180 Q124 186 132 182" stroke="rgba(255,255,255,.1)" stroke-width="1.5" fill="none">
+        <animate attributeName="d" values="M5 180 Q22 172 40 180 Q58 188 76 180 Q94 172 112 180 Q124 186 132 182;M5 182 Q22 190 40 182 Q58 174 76 182 Q94 190 112 182 Q124 176 132 180;M5 180 Q22 172 40 180 Q58 188 76 180 Q94 172 112 180 Q124 186 132 182" dur="3.5s" repeatCount="indefinite"/>
+      </path>
+    </svg>
+    <div class="hero-tag">About MOG Consulting</div>
+    <h1 class="display" style="margin:0 auto;max-width:800px;">불확실한 경영환경 속,<br>확실한 방향을 제시하는 <em>등대</em></h1>
+    <p class="hero-desc" style="margin:20px auto 0;max-width:620px;text-align:center;">
+      MOG Consulting은 불확실한 경영환경 속에서 고객사에게 확실한 방향을 제시하는 등대와 같은 존재입니다.<br>어떤 폭풍 속에서도 흔들리지 않는 신뢰와 전략으로 함께합니다.
+    </p>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section style="background:var(--sub-bg);">
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">Mission & Vision</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto;">
+      <div class="card reveal" style="text-align:center;padding:40px 32px;">
+        <div style="font-size:.75rem;color:var(--wine);font-weight:700;letter-spacing:2px;margin-bottom:12px;">MISSION</div>
+        <h3 style="font-size:1.15rem;line-height:1.6;">경영 현장의 문제를<br>현실적인 방법으로<br>함께 해결합니다</h3>
+        <p style="margin-top:12px;font-size:.9rem;">Mission Oriented Group —<br>사명감을 가진 사람들이 모인 곳</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:40px 32px;">
+        <div style="font-size:.75rem;color:var(--wine);font-weight:700;letter-spacing:2px;margin-bottom:12px;">VISION</div>
+        <h3 style="font-size:1.15rem;line-height:1.6;">한국과 일본을 잇는<br>가장 신뢰받는<br>경영 파트너가 됩니다</h3>
+        <p style="margin-top:12px;font-size:.9rem;">Empowering Your Growth<br>through Execution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 브랜드 정체성 -->
+<section>
+  <div class="container">
+    <div class="section-tag">Brand Identity</div>
+    <h2 class="section-title">MOG Consulting이란</h2>
+    <div class="card reveal" style="padding:40px;border-left:4px solid var(--wine);max-width:800px;margin-top:28px;">
+      <h3 style="color:var(--wine);margin-bottom:16px;">MOG = Mission Oriented Group</h3>
+      <p style="font-size:1rem;line-height:2;margin-bottom:20px;"><strong style="color:var(--wine);">MOG Consulting</strong>은 주식회사 모그씨앤아이(MoG C&I Co., Ltd.)의 브랜드명입니다. C&I는 <strong style="color:var(--wine);">Consulting & Innovation</strong>의 약자로, 컨설팅을 통한 경영 혁신이라는 사업의 본질을 담고 있습니다.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="padding:24px;background:var(--sub-bg);border-radius:12px;">
+          <div style="font-size:.72rem;font-weight:800;color:var(--wine);letter-spacing:2px;margin-bottom:8px;">BRAND NAME</div>
+          <h4 style="font-size:1.15rem;margin-bottom:6px;">MOG Consulting</h4>
+          <p style="font-size:.88rem;">고객이 만나는 이름. 제안서, 홈페이지, 세미나, 명함 등 모든 대외 커뮤니케이션에서 사용합니다.</p>
+        </div>
+        <div style="padding:24px;background:var(--sub-bg);border-radius:12px;">
+          <div style="font-size:.72rem;font-weight:800;color:var(--gray-text);letter-spacing:2px;margin-bottom:8px;">LEGAL ENTITY</div>
+          <h4 style="font-size:1.15rem;margin-bottom:6px;">주식회사 모그씨앤아이</h4>
+          <p style="font-size:.88rem;">MoG C&I Co., Ltd. (사업자번호 515-81-56927). 계약서, 세금계산서 등 법적 문서에 사용하는 등기명입니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5대 핵심 운영원칙 -->
+<section>
+  <div class="container">
+    <div class="section-tag">Business Principles</div>
+    <h2 class="section-title">5가지 핵심 운영 원칙</h2>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:36px;">
+      <div class="card reveal" style="text-align:center;padding:28px 16px;">
+        <div style="font-size:1.6rem;margin-bottom:10px;">🧭</div>
+        <h4 style="font-size:.95rem;color:var(--wine);margin-bottom:6px;">명확한 방향 제시</h4>
+        <p style="font-size:.82rem;">고객이 나아갈 방향을 먼저 정의하고 함께 실행합니다</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:28px 16px;">
+        <div style="font-size:1.6rem;margin-bottom:10px;">⚓</div>
+        <h4 style="font-size:.95rem;color:var(--wine);margin-bottom:6px;">위기 상황의 가이드</h4>
+        <p style="font-size:.82rem;">경영환경 변화 속에서 안정적으로 위기를 극복합니다</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:28px 16px;">
+        <div style="font-size:1.6rem;margin-bottom:10px;">💡</div>
+        <h4 style="font-size:.95rem;color:var(--wine);margin-bottom:6px;">한발 앞선 통찰력</h4>
+        <p style="font-size:.82rem;">시장 변화를 선제적으로 읽고 전략적 인사이트를 제공합니다</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:28px 16px;">
+        <div style="font-size:1.6rem;margin-bottom:10px;">🤝</div>
+        <h4 style="font-size:.95rem;color:var(--wine);margin-bottom:6px;">신뢰의 네트워크</h4>
+        <p style="font-size:.82rem;">한일 양국의 기업 네트워크를 기반으로 실질적 연결을 만듭니다</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:28px 16px;">
+        <div style="font-size:1.6rem;margin-bottom:10px;">🔧</div>
+        <h4 style="font-size:.95rem;color:var(--wine);margin-bottom:6px;">실행 중심 컨설팅</h4>
+        <p style="font-size:.82rem;">보고서가 아닌 현장에서의 실행과 정착까지 책임집니다</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 핵심가치 -->
+<section style="background:var(--sub-bg);">
+  <div class="container">
+    <div class="section-tag">Core Values</div>
+    <h2 class="section-title">핵심 가치</h2>
+    <div class="card-grid cols-3" style="margin-top:32px;">
+      <div class="card reveal">
+        <h4 style="color:var(--wine);">🎯 현장주의 (Field-First)</h4>
+        <p>이론이 아닌 경영 현장의 실제 문제에서 출발합니다. 현장을 가장 잘 아는 사람들과 함께 해결책을 만듭니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4 style="color:var(--wine);">🔍 본질 직시 (Root Cause)</h4>
+        <p>표면적 증상이 아닌 문제의 본질을 파악합니다. 빠른 해결보다 정확한 진단을 우선합니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4 style="color:var(--wine);">🤝 동반 성장 (Co-Growth)</h4>
+        <p>컨설턴트가 떠난 뒤에도 고객이 스스로 성장할 수 있는 역량을 심어드립니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4 style="color:var(--wine);">🌉 한일 브릿지 (Bridge)</h4>
+        <p>한국과 일본, 두 시장의 경영 문화를 모두 체득한 팀이 양국 비즈니스의 간극을 메웁니다.</p>
+      </div>
+      <div class="card reveal">
+        <h4 style="color:var(--wine);">📐 프로세스 기반 (Process-Driven)</h4>
+        <p>DIPS, BSC, JCA 등 검증된 프레임워크를 기업 상황에 맞게 커스터마이징하여 적용합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 왜 MOG CNI인가 -->
+<section>
+  <div class="container">
+    <div class="section-tag">Why MOG CNI</div>
+    <h2 class="section-title">왜 MOG 컨설팅인가</h2>
+    <div class="card-grid cols-2" style="margin-top:32px;">
+      <div class="card reveal" style="border-left:4px solid var(--wine);">
+        <h4>🌏 한일 비즈니스 브릿지</h4>
+        <p>대표가 일본에서 유학·컨설팅 경험을 쌓았고, 서울재팬클럽(SJC) 경영위원회의 유일한 한국인 멤버입니다. 한국과 일본의 경영 문화를 모두 체득한 팀이 양국 비즈니스의 간극을 메웁니다.</p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid var(--mid-wine);">
+        <h4>📐 검증된 방법론</h4>
+        <p>DIPS, BSC, JCA 등 현장에서 수십 개 기업에 적용하여 검증된 프레임워크를 기업 상황에 맞게 커스터마이징합니다. 이론이 아닌 실전에서 태어난 방법론입니다.</p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid var(--light-wine);">
+        <h4>👤 소수정예 밀착 자문</h4>
+        <p>대형 컨설팅펌의 매뉴얼 접근이 아닌, 경영자와 눈높이를 맞춘 1:1 파트너십을 제공합니다. 시니어급이 직접 현장에서 함께합니다.</p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid var(--pink-accent);">
+        <h4>🔧 실행까지 책임</h4>
+        <p>전략 보고서를 납품하고 떠나는 것이 아니라, 현장에서 실행되고 정착될 때까지 함께합니다. 컨설턴트가 떠난 뒤에도 작동하는 체계를 만듭니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section style="background:var(--sub-bg);">
+  <div class="container">
+    <div class="section-tag">Our Team</div>
+    <h2 class="section-title">현장 경험과 글로벌 네트워크를 갖춘 팀</h2>
+
+    <!-- Leadership -->
+    <h3 style="margin-top:32px;margin-bottom:16px;font-size:1rem;color:var(--gray-text);font-weight:600;">Leadership</h3>
+    <div class="card-grid cols-3">
+      <div class="card reveal" style="text-align:center;padding:36px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 16px;">JS</div>
+        <h4>변주성</h4>
+        <div style="font-size:.85rem;color:var(--wine);font-weight:600;margin:4px 0 12px;">대표 / CEO</div>
+        <p style="font-size:.85rem;text-align:left;">Yokohama National Univ. Education. 일본계 경영컨설팅회사 출신. 서울재팬클럽(SJC) 경영위원회 유일한 한국인 멤버. 일본계 한국법인 대상 컨설팅 다수 수행. 대기업·일본 기업 중심 프로젝트 총괄.</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:36px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--mid-wine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 16px;">TY</div>
+        <h4>곽태연</h4>
+        <div style="font-size:.85rem;color:var(--wine);font-weight:600;margin:4px 0 12px;">부사장 / Head of Division</div>
+        <p style="font-size:.85rem;text-align:left;">Keio Univ. Economics. 전) Kearney. 국내·영미권 기업 및 스타트업 중심 프로젝트 총괄. DX, HR, 조직개발, 전략, 영업 체계 등 다방면 컨설팅 수행. 한국어·영어 기반 보고서, 발표, 교육 리드.</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:36px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--light-wine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 16px;">JY</div>
+        <h4>이주열</h4>
+        <div style="font-size:.85rem;color:var(--wine);font-weight:600;margin:4px 0 12px;">전략고문 / Senior Advisor</div>
+        <p style="font-size:.85rem;text-align:left;">Mondragon Univ.(Spain) TeamPreneurship Center Head. 전) SUNY Korea CEWIT 기술사업화본부 이사. Hanyang Univ. Business. 국내외 대기업 대상 경영 컨설팅 및 PoC 수행. 대기업 사내벤처 프로그램 설계·리더십·기업문화 디자인. 스타트업 엑셀러레이팅. 저서 4권.</p>
+      </div>
+    </div>
+
+    <!-- Consulting Team -->
+    <h3 style="margin-top:32px;margin-bottom:16px;font-size:1rem;color:var(--gray-text);font-weight:600;">Consulting Team</h3>
+    <div class="card-grid cols-2">
+      <div class="card reveal" style="text-align:center;padding:36px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--pink-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 16px;">SH</div>
+        <h4>김선형</h4>
+        <div style="font-size:.85rem;color:var(--wine);font-weight:600;margin:4px 0 12px;">파트너 / Partner</div>
+        <p style="font-size:.85rem;text-align:left;">Seoul National Univ. Business Administration. Seoul National Univ. 경영대학원 인사관리 박사과정 수료. 전) Kearney Senior Analyst. 전) SNI Institute 혁신전략 팀장. 대기업·중견기업 대상 HR 전략/체계, 조직문화, HR DT 프로젝트 다수 수행.</p>
+      </div>
+      <div class="card reveal" style="text-align:center;padding:36px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--light-pink);color:var(--wine);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 16px;">SM</div>
+        <h4>이선미</h4>
+        <div style="font-size:.85rem;color:var(--wine);font-weight:600;margin:4px 0 12px;">컨설턴트 / Consultant</div>
+        <p style="font-size:.85rem;text-align:left;">Murdoch University Singapore, MBA. 전) 의정부시상권활성화재단 주임. 일본 기업 대상 성과관리체계 구축 및 인사제도 설계 프로젝트 수행. HR 제도 설계·체계 구축·성과관리·조직문화 진단. 공공기관 경영평가·정책개발·사업계획 등.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section>
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">Company Info</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:28px;">
+      <div class="reveal"><div style="font-weight:800;font-size:1.8rem;color:var(--wine);font-weight:700;">2022</div><div style="font-size:.85rem;color:var(--gray-text);margin-top:4px;">설립연도</div></div>
+      <div class="reveal"><div style="font-weight:800;font-size:1.8rem;color:var(--wine);font-weight:700;">강남</div><div style="font-size:.85rem;color:var(--gray-text);margin-top:4px;">서울 테헤란로 418</div></div>
+      <div class="reveal"><div style="font-weight:800;font-size:1.8rem;color:var(--wine);font-weight:700;">B2B</div><div style="font-size:.85rem;color:var(--gray-text);margin-top:4px;">전문 컨설팅</div></div>
+      <div class="reveal"><div style="font-weight:800;font-size:1.8rem;color:var(--wine);font-weight:700;">KR·JP</div><div style="font-size:.85rem;color:var(--gray-text);margin-top:4px;">한일 양국 네트워크</div></div>
+    </div>
+    <div style="margin-top:48px;">
+      <a class='btn btn-wine' href='/#contact' style='font-size:1rem;padding:16px 36px;'>상담 신청하기 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">MOG Consulting</div>
+      <div class="footer-info">주식회사 모그씨앤아이 | 사업자번호 515-81-56927<br>서울 강남구 테헤란로 418, 11층 1103호 | contact@mogcni.co.kr</div>
+    </div>
+    <div class="footer-links">
+      <a href='/#services'>서비스</a>
+      <a href='/#education'>교육</a>
+      <a href="blog/">블로그</a>
+      <a href="https://www.mogcni.co.kr" target="_blank">mogcni.co.kr</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MOG Consulting. All rights reserved.</div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navMenu').classList.toggle('open'));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+
+<style>
+@media (max-width:900px) {
+  section > .container > div[style*="grid-template-columns:repeat(5"] { grid-template-columns:repeat(2,1fr) !important; }
+  section > .container > div[style*="grid-template-columns:repeat(4"] { grid-template-columns:repeat(2,1fr) !important; }
+  section > .container > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+}
+</style>
+
+</body>
+</html>

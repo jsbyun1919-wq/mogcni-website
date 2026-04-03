@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | MOG Consulting</title>
+<meta name="description" content="MOG Consultingの会社概要。日韓を繋ぐ経営コンサルティングファーム。">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#5C1D3D;--mw:#7A2B52;--lw:#9B3D6B;--pk:#C97690;--lp:#E8B4C4;--pp:#F5DDE6;--bg:#F0ECEF;--bd:#D4CDD1;--gy:#8A7E84;--dk:#3A1828;--md:#5C4050;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Meiryo UI','Meiryo','Hiragino Sans',sans-serif;color:var(--dk);background:#fff;-webkit-font-smoothing:antialiased;font-weight:300;}
+a{text-decoration:none;color:inherit;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);transition:all .35s;}
+.nav.s{padding:10px 48px;box-shadow:0 1px 20px rgba(92,29,61,.06);}
+.n-logo-t{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--wine);}
+.n-logo-t span{font-weight:400;color:var(--pk);}
+.n-menu{display:flex;align-items:center;gap:26px;}
+.n-menu a{font-size:.82rem;font-weight:500;color:var(--md);transition:color .3s;}
+.n-menu a:not(.n-btn):hover{color:var(--wine);}
+.n-btn{background:var(--wine)!important;color:#fff!important;padding:8px 20px;border-radius:6px;font-weight:600!important;}
+.lang-sw{display:flex;gap:4px;margin-left:12px;}
+.lang-sw a{font-size:.7rem;padding:4px 8px;border:1px solid var(--bd);border-radius:4px;color:var(--gy);transition:all .3s;}
+.lang-sw a.active{background:var(--wine);color:#fff;border-color:var(--wine);}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--dk);margin:5px 0;}
+
+.page-hero{padding:160px 0 80px;background:var(--wine);text-align:center;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 80%,rgba(155,61,107,.3),transparent 70%);}
+.page-hero *{position:relative;z-index:1;}
+.page-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:#fff;margin-bottom:16px;}
+.page-hero h1 em{font-style:italic;font-family:'Playfair Display',serif;color:var(--lp);}
+.page-hero p{color:rgba(255,255,255,.65);font-size:.9rem;line-height:1.8;}
+
+.section{padding:80px 0;}.section--alt{background:var(--bg);}
+.container{max-width:1100px;margin:0 auto;padding:0 48px;}
+.section-label{font-size:.7rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--pk);margin-bottom:12px;}
+.section-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;line-height:1.4;margin-bottom:16px;}
+
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px;}
+.mission-card{padding:40px 32px;border-radius:16px;background:#fff;border:1px solid var(--bd);}
+.mission-card .tag{font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--pk);margin-bottom:12px;}
+.mission-card h3{font-size:1.05rem;font-weight:700;line-height:1.6;margin-bottom:12px;}
+.mission-card p{color:var(--md);font-size:.85rem;line-height:1.8;font-weight:300;}
+
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.val-card{padding:28px 24px;border-radius:12px;border:1px solid var(--bd);background:#fff;transition:all .3s;}
+.val-card:hover{border-color:var(--pk);transform:translateY(-3px);box-shadow:0 8px 24px rgba(92,29,61,.06);}
+.val-icon{font-size:1.3rem;margin-bottom:10px;}
+.val-card h4{font-size:.9rem;font-weight:700;margin-bottom:8px;}
+.val-card p{color:var(--md);font-size:.8rem;line-height:1.8;font-weight:300;}
+
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;}
+.team-card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:32px 28px;text-align:center;transition:all .3s;}
+.team-card:hover{border-color:var(--pk);box-shadow:0 8px 24px rgba(92,29,61,.06);}
+.team-avatar{width:64px;height:64px;border-radius:50%;background:var(--pp);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.2rem;font-weight:700;color:var(--wine);}
+.team-card h4{font-size:.95rem;font-weight:700;margin-bottom:4px;}
+.team-role{font-size:.75rem;color:var(--pk);font-weight:600;margin-bottom:12px;}
+.team-card p{color:var(--md);font-size:.8rem;line-height:1.8;text-align:left;font-weight:300;}
+
+.footer{background:var(--wine);color:rgba(255,255,255,.6);padding:48px 0 32px;font-size:.75rem;line-height:1.8;}
+.footer-inner{display:flex;justify-content:space-between;align-items:start;max-width:1100px;margin:0 auto;padding:0 48px;}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;font-weight:700;margin-bottom:12px;}
+.footer-links{display:flex;gap:24px;}
+.footer-links a{color:rgba(255,255,255,.5);transition:color .3s;}
+.footer-links a:hover{color:#fff;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:768px){
+  .nav{padding:12px 20px;}.n-menu{display:none;}.hamburger{display:block;}
+  .container{padding:0 20px;}.section{padding:64px 0;}
+  .mission-grid,.values-grid,.team-grid{grid-template-columns:1fr;}
+  .footer-inner{flex-direction:column;gap:24px;padding:0 20px;}
+}
+.mobile-nav{display:none;position:fixed;inset:0;background:var(--wine);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px;}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{font-size:1.3rem;color:rgba(255,255,255,.8);}
+.mobile-close{position:absolute;top:20px;right:20px;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="/ja/" class="n-logo"><span class="n-logo-t">MOG <span>Consulting</span></span></a>
+  <div class="n-menu">
+    <a href="/ja/#services">サービス</a>
+    <a href="/ja/diagnostic">診断ツール</a>
+    <a href="/ja/about" style="color:var(--wine);font-weight:700;">会社概要</a>
+    <a href="/ja/#contact">ご相談</a>
+    <div class="lang-sw"><a href="/">KO</a><a href="/en/">EN</a><a href="/ja/" class="active">JA</a></div>
+  </div>
+  <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.add('open')"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav">
+  <button class="mobile-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <a href="/ja/#services" onclick="this.parentElement.classList.remove('open')">サービス</a>
+  <a href="/ja/diagnostic">診断ツール</a>
+  <a href="/ja/about">会社概要</a>
+  <a href="/ja/#contact" onclick="this.parentElement.classList.remove('open')">ご相談</a>
+</div>
+
+<section class="page-hero">
+  <h1>不確実な経営環境の中で<br>確実な方向を示す<em>灯台</em></h1>
+  <p>MOG Consultingは、どんな荒波の中でも揺るぎない信頼と戦略で共に歩みます。</p>
+</section>
+
+<!-- MISSION -->
+<section class="section">
+  <div class="container">
+    <div class="section-label reveal">Mission & Vision</div>
+    <div class="mission-grid">
+      <div class="mission-card reveal">
+        <div class="tag">Mission</div>
+        <h3>経営現場の問題を、現実的な方法で共に解決します</h3>
+        <p>Mission Oriented Group — 使命感を持つ人々が集まった場所。</p>
+      </div>
+      <div class="mission-card reveal">
+        <div class="tag">Vision</div>
+        <h3>韓国と日本を繋ぐ、最も信頼される経営パートナーになります</h3>
+        <p>Empowering Your Growth through Execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-label reveal">Core Values</div>
+    <h2 class="section-title reveal">核心的価値</h2>
+    <div class="values-grid">
+      <div class="val-card reveal"><div class="val-icon">🎯</div><h4>現場主義</h4><p>理論ではなく経営現場の実際の問題から出発します。現場を最もよく知る人たちと共に解決策を作ります。</p></div>
+      <div class="val-card reveal"><div class="val-icon">🔍</div><h4>本質直視</h4><p>表面的な症状ではなく問題の本質を把握します。早い解決より正確な診断を優先します。</p></div>
+      <div class="val-card reveal"><div class="val-icon">🤝</div><h4>共同成長</h4><p>コンサルタントが去った後もお客様が自ら成長できる力を育てます。</p></div>
+      <div class="val-card reveal"><div class="val-icon">🌉</div><h4>日韓ブリッジ</h4><p>韓国と日本の経営文化を体得したチームが両国ビジネスの間の溝を埋めます。</p></div>
+      <div class="val-card reveal"><div class="val-icon">📐</div><h4>プロセス基盤</h4><p>DIPS、BSC、JCA等の検証されたフレームワークを企業の状況に合わせてカスタマイズします。</p></div>
+      <div class="val-card reveal"><div class="val-icon">🔧</div><h4>実行重視</h4><p>報告書を納品して終わりではありません。現場で実行され定着するまで伴走します。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+  <div class="container">
+    <div class="section-label reveal">Our Team</div>
+    <h2 class="section-title reveal">現場経験とグローバルネットワークを備えたチーム</h2>
+    <h3 style="font-size:.82rem;color:var(--pk);font-weight:600;margin-top:32px;margin-bottom:8px;">リーダーシップ</h3>
+    <div class="team-grid" style="margin-top:16px;">
+      <div class="team-card reveal">
+        <div class="team-avatar">JS</div>
+        <h4>卞柱成（ビョン・ジュソン）</h4>
+        <div class="team-role">代表 / CEO</div>
+        <p>横浜国立大学 東アジア近現代経済史専攻。日系経営コンサルティング会社（LiB Consulting）出身。ソウルジャパンクラブ（SJC）経営委員会の唯一の韓国人メンバー。在韓日系企業向けコンサルティング多数遂行。</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">TY</div>
+        <h4>郭泰延（クァク・テヨン）</h4>
+        <div class="team-role">副社長 / Head of Division</div>
+        <p>慶應義塾大学 経済学部。前）Kearney。国内・英米圏企業およびスタートアップ中心のプロジェクト統括。DX、HR、組織開発、戦略、営業体制等、幅広いコンサルティングを遂行。</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">JY</div>
+        <h4>李周烈（イ・ジュヨル）</h4>
+        <div class="team-role">戦略顧問 / Senior Advisor</div>
+        <p>モンドラゴン大学（スペイン）TeamPreneurship Center Head。前）SUNY Korea。漢陽大学 経営学部。国内外大企業向け経営コンサルティング遂行。著書4冊。大企業社内ベンチャー・リーダーシップ・企業文化設計。</p>
+      </div>
+    </div>
+    <h3 style="font-size:.82rem;color:var(--pk);font-weight:600;margin-top:48px;margin-bottom:8px;">コンサルティングチーム</h3>
+    <div class="team-grid" style="grid-template-columns:repeat(2,1fr);margin-top:16px;">
+      <div class="team-card reveal">
+        <div class="team-avatar">SH</div>
+        <h4>金善亨（キム・ソニョン）</h4>
+        <div class="team-role">パートナー / Partner</div>
+        <p>ソウル大学 経営学部。ソウル大学経営大学院 人事管理博士課程修了。前）Kearney Senior Analyst。大企業・中堅企業向けHR戦略、組織文化、HR DTプロジェクト多数遂行。</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">SM</div>
+        <h4>李善美（イ・ソンミ）</h4>
+        <div class="team-role">コンサルタント / Consultant</div>
+        <p>Murdoch University Singapore MBA。日系企業向け成果管理体制構築および人事制度設計プロジェクト遂行。HR制度設計・組織文化診断専門。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section class="section section--alt">
+  <div class="container" style="text-align:center;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:700px;margin:0 auto;">
+      <div class="reveal"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--wine);">2022</div><div style="font-size:.75rem;color:var(--gy);margin-top:4px;">設立</div></div>
+      <div class="reveal"><div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--wine);">江南</div><div style="font-size:.75rem;color:var(--gy);margin-top:4px;">ソウル テヘラン路</div></div>
+      <div class="reveal"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--wine);">B2B</div><div style="font-size:.75rem;color:var(--gy);margin-top:4px;">専門コンサルティング</div></div>
+      <div class="reveal"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--wine);">KR·JP</div><div style="font-size:.75rem;color:var(--gy);margin-top:4px;">両国ネットワーク</div></div>
+    </div>
+    <a href="/ja/#contact" style="display:inline-block;margin-top:40px;background:var(--wine);color:#fff;padding:14px 36px;border-radius:8px;font-weight:600;font-size:.88rem;transition:all .3s;" class="reveal">無料相談のお申し込み →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">MOG Consulting</div><div>株式会社モグC&I | 事業者番号 515-81-56927<br>ソウル特別市江南区テヘラン路418、11階1103号 | contact@mogcni.co.kr</div></div>
+    <div class="footer-links"><a href="/ja/#services">サービス</a><a href="/ja/diagnostic">診断ツール</a><a href="/">한국어</a><a href="/en/">English</a></div>
+  </div>
+  <div style="text-align:center;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);max-width:1100px;margin-left:auto;margin-right:auto;padding-left:48px;padding-right:48px;">© 2026 MOG Consulting. All rights reserved.</div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('s',window.scrollY>40);});
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

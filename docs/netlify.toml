@@ -1,0 +1,49 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+
+[[redirects]]
+  from = "/blog/영업-조직-팀장-인맥*"
+  to = "/blog/sales-dependency-structure.html"
+  status = 301
+[[redirects]]
+  from = "/blog/아메바-경영-선행-조건*"
+  to = "/blog/amoeba-prerequisites.html"
+  status = 301
+[[redirects]]
+  from = "/blog/성과관리-KPI*"
+  to = "/blog/kpi-not-working.html"
+  status = 301
+[[redirects]]
+  from = "/blog/AI-컨설팅*"
+  to = "/blog/consulting-in-ai-era.html"
+  status = 301
+[[redirects]]
+  from = "/blog/일본계-기업*"
+  to = "/blog/japanese-subsidiary-challenges.html"
+  status = 301
+[[redirects]]
+  from = "/blog/스타트업-조직*"
+  to = "/blog/startup-late-system.html"
+  status = 301
+[[redirects]]
+  from = "/blog/영업-생산성*"
+  to = "/blog/sales-productivity-plateau.html"
+  status = 301
+[[redirects]]
+  from = "/blog/전략-실행*"
+  to = "/blog/strategy-execution-gap.html"
+  status = 301
+[[redirects]]
+  from = "/blog/아메바-경영-철학*"
+  to = "/blog/amoeba-philosophy-not-accounting.html"
+  status = 301
+[[redirects]]
+  from = "/blog/컨설팅-보고서*"
+  to = "/blog/consulting-report-in-drawer.html"
+  status = 301
